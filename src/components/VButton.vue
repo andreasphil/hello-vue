@@ -34,7 +34,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
 .button {
   background-color: transparent;
   border: 2px solid #009DE0;
@@ -45,26 +45,27 @@ export default {
   min-width: 200px;
   padding: 10px 20px;
   text-align: center;
-
-  & + & {
-    margin-left: 20px;
-  }
-
-  &.primary {
-    background-color: #009DE0;
-    color: #FFF;
-    cursor: pointer;
-
-    &.disabled {
-      color: #FFF;
-      background-color: #D6267F;
-    }
-  }
-
-  &.disabled {
-    border-color: #D6267F;
-    color: #D6267F;
-    cursor: not-allowed;
-  }
 }
+  
+button + button {
+  margin-left: 20px;
+}
+
+button.primary {
+  background-color: #009DE0;
+  color: #FFF;
+  cursor: pointer;
+}
+  
+button.primary.disabled {
+  color: #FFF;
+  background-color: #D6267F;
+}
+
+button.disabled {
+  border-color: #D6267F;
+  color: #D6267F;
+  cursor: not-allowed;
+}
+
 </style>
