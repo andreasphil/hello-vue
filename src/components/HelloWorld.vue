@@ -29,7 +29,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
 .hello-world {
   color: #FFF;
   font-size: 60px;
@@ -37,3 +37,4 @@ export default {
   margin-top: 50px;
 }
 </style>
+

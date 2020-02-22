@@ -54,9 +54,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
 .counter {
   padding: 50px;
   background-color: rgba(255, 255, 255, 0.075);
 }
 </style>
+
