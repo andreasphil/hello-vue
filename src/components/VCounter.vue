@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import VButton from "@/components/VButton.vue";
-import VCount from "@/components/VCount.vue";
+import VButton from '@/components/VButton.vue'
+import VCount from '@/components/VCount.vue'
 
 export default {
   components: {
@@ -29,29 +29,29 @@ export default {
 
   computed: {
     localValue: {
-      get() {
-        return this.value;
+      get () {
+        return this.value
       },
-      set(value) {
-        this.$emit("input", value);
+      set (value) {
+        this.$emit('input', value)
       }
     },
 
-    canDecrement() {
-      return this.localValue > 0;
+    canDecrement () {
+      return this.localValue > 0
     },
 
-    canIncrement() {
-      return this.goal > 0 && this.localValue < this.goal;
+    canIncrement () {
+      return this.goal > 0 && this.localValue < this.goal
     }
   },
 
   watch: {
-    value: function(val) {
-      val === this.goal && this.$emit("done");
+    value: function (val) {
+      val === this.goal && this.$emit('done')
     }
   }
-};
+}
 </script>
 
 <style lang="css" scoped>
@@ -60,4 +60,3 @@ export default {
   background-color: rgba(255, 255, 255, 0.075);
 }
 </style>
-

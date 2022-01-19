@@ -14,13 +14,13 @@ export default {
   },
 
   computed: {
-    displayCount() {
+    displayCount () {
       // Vue automatically figures out which props/data the computed prop depends on
       // and recalculates it accordingly
-      return this.count || "😴";
+      return this.count || '😴'
     }
   }
-};
+}
 </script>
 
 <style lang="css" scoped>

@@ -6,27 +6,27 @@
 </template>
 
 <script>
-import VCounter from "@/components/VCounter.vue";
+import VCounter from '@/components/VCounter.vue'
 
 export default {
   components: {
     VCounter
   },
 
-  data() {
+  data () {
     return {
       count: 0,
       goal: 10,
       goalMet: false
-    };
+    }
   },
 
   methods: {
-    showHelloWorld() {
-      this.goalMet = true;
+    showHelloWorld () {
+      this.goalMet = true
     }
   }
-};
+}
 </script>
 
 <style lang="css" scoped>
@@ -37,4 +37,3 @@ export default {
   margin-top: 50px;
 }
 </style>
-

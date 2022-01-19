@@ -27,11 +27,11 @@ export default {
   },
 
   methods: {
-    onClick() {
-      this.$emit("click");
+    onClick () {
+      this.$emit('click')
     }
   }
-};
+}
 </script>
 
 <style lang="css" scoped>
@@ -46,7 +46,7 @@ export default {
   padding: 10px 20px;
   text-align: center;
 }
-  
+
 button + button {
   margin-left: 20px;
 }
@@ -56,7 +56,7 @@ button.primary {
   color: #FFF;
   cursor: pointer;
 }
-  
+
 button.primary.disabled {
   color: #FFF;
   background-color: #D6267F;
